@@ -5,5 +5,5 @@ public static class GlobalCivHelperClass
     public static string CurrentCivAbb { get; set; } = "";
     //this means if you are testing a civ and its populated, then some ui can do something with it.
     public static bool CurrentlyTestingSingle { get; set; }
-    public static CivilizationBasicModel? CivChosen { get; set; } //some processes may use this.
+    
 }
