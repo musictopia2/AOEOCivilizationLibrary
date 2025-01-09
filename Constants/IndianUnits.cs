@@ -32,7 +32,7 @@ public static class IndianUnits
     public const string Ram = "In_Sie_Ram";
     public const string Palintonon = "In_Sie_Palintonon";
     public const string Scout = "In_Inf_Scout";
-    public const string In_SacredCow = "Sacred Cow";
+    public const string SacredCow = "In_SacredCow";
     public const string ClubMonkey = "In_Inf_Monkey1";
     public const string FireMonkey = "In_Arc_Monkey2";
 }
