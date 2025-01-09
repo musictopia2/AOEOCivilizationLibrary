@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.DataServices;
+﻿        namespace AOEOCivilizationLibrary.DataServices;
 public class InMemoryCivilizationDataService : ICivilizationDataService
 {
     Task<BasicList<CivilizationBasicModel>> ICivilizationDataService.GetCivilizationsAsync()
@@ -11,12 +11,10 @@ public class InMemoryCivilizationDataService : ICivilizationDataService
             new("Pe", "Persian"),
             new("Ba", "Babylonian"),
             new("No", "Norse"),
-            new("Ro", "Roman")
+            new("Ro", "Roman"),
+            new("In", "Indian")
         ];
-        if (ICivilizationDataService.IncludeIndians)
-        {
-            output.Add(new("In", "Indian"));
-        }
+        //since indians has been released, no more workaround needed.
         output = output.OrderBy(xx => xx.FullName).ToBasicList(); //so it can work with my combo box.
         return Task.FromResult(output);
     }
