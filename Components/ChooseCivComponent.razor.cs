@@ -4,6 +4,8 @@ public partial class ChooseCivComponent
     public static Func<BasicList<CivilizationBasicModel>, BasicList<CivilizationBasicModel>>? FilterAction { get; set; }
     [Inject]
     private IChooseCivViewModel? DataContext { get; set; }
+    [Inject]
+    public ICivilizationContext? CivilizationContext { get; set; } // i think this is the default.  if not, then i need to rethink this.
     [Parameter]
     public EventCallback<CivilizationBasicModel> ChoseCiv { get; set; }
     private readonly AutoCompleteStyleModel _autos = new();
@@ -36,6 +38,7 @@ public partial class ChooseCivComponent
         {
             throw new CustomBasicException("Cannot reset to null.  Rethink");
         }
+        CivilizationContext!.CurrentCivilization = civ; //i think.
         await ChoseCiv.InvokeAsync(civ);
     }
 }
