@@ -1,15 +1,11 @@
 ﻿namespace AOEOCivilizationLibrary.ApplicationState;
 public interface ICivilizationContext
 {
-    CivilizationBasicModel? CurrentCivilization { get; set; }
+    CivilizationBasicModel CurrentCivilization { get; set; }
     string CivAbb
     {
         get
         {
-            if (CurrentCivilization is null)
-            {
-                return "";
-            }
             return CurrentCivilization.Abbreviation;
         }
     }
@@ -17,10 +13,6 @@ public interface ICivilizationContext
     {
         get
         {
-            if (CurrentCivilization is null)
-            {
-                return "";
-            }
             return CurrentCivilization.FullName;
         }
     }
@@ -28,4 +20,5 @@ public interface ICivilizationContext
     {
         CurrentCivilization = new(civAbb, fullName);
     }
+    void Reset() => CurrentCivilization = new("", "");
 }
