@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class BabylonUnits
 {
     public const string Villager = "Ba_Civ_Villager";
@@ -55,6 +55,44 @@ public static class BabylonUnits
             Dock,
             Ziggurat,
             Barracks,
+            Market,
+            Armory,
+            ArcheryRange,
+            Stables,
+            Wonder,
+            Garden,
+            SiegeWorkshop
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Villager,
+            FishingBoat,
+            Caravan,
+            MerchantTransport,
+            OxCart,
+            Spearman,
+            RoyalGuard,
+            Bowman,
+            Scout,
+            Lancer,
+            Palintonon,
+            Priest,
+            TownCenter,
+            WatchPost,
+            GuardTower,
+            Fortress,
+            Slinger,
+            ChariotArcher,
+            Sapper,
+            WarChariot,
+            MountedArcher,
+            Bireme,
+            RamShip,
+            ShieldBearer,
+            Farm,
             Market,
             Armory,
             ArcheryRange,

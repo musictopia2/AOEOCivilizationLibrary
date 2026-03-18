@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class PersianUnits
 {
     public const string Sparabara = "Pe_Inf_Sparabara";
@@ -63,6 +63,47 @@ public static class PersianUnits
             Wonder,
             Storehouse,
             SiegeWorkshop
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Sparabara,
+            Spearman,
+            Immortal,
+            Bowman,
+            Takabara,
+            Scout,
+            Asabara,
+            MountedArcher,
+            Cataphract,
+            BatteringRam,
+            WarWagon,
+            Palintonon,
+            Galley,
+            RamShip,
+            Magus,
+            Villager,
+            FishingBoat,
+            Caravan,
+            MerchantTransport,
+            MangonelGalley,
+            WarAcademy,
+            ArcheryRange,
+            Armory,
+            Barracks,
+            Dock,
+            Fortress,
+            GuardTower,
+            WatchPost,
+            Market,
+            SiegeWorkshop,
+            Stables,
+            Storehouse,
+            TownCenter,
+            Wonder,
+            ImmortalCamp
         ];
     }
 }

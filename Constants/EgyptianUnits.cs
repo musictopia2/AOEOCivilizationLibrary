@@ -1,4 +1,5 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
+
 public static class EgyptianUnits
 {
     public const string TempleOfRa = "Eg_Bldg_Temple1";
@@ -64,6 +65,49 @@ public static class EgyptianUnits
             Wonder,
             Storehouse,
             SiegeWorkshop
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            TempleOfRa,
+            PriestOfRa,
+            TempleOfSet,
+            TempleOfPtah,
+            PriestOfPtah,
+            PriestOfSet,
+            ChariotArcher,
+            ElephantArcher,
+            Slinger,
+            Armory,
+            Barracks,
+            Dock,
+            Farm,
+            Fortress,
+            GuardTower,
+            Market,
+            SiegeWorkshop,
+            Stables,
+            TownCenter,
+            Wonder,
+            Storehouse,
+            Scout,
+            CamelRider,
+            WarElephant,
+            Caravan,
+            FishingBoat,
+            MerchantTransport,
+            Villager,
+            Axeman,
+            Spearman,
+            CatapultTrireme,
+            Trireme,
+            FireShip,
+            SiegeTower,
+            Catapult,
+            Palintonon,
+            Gate
         ];
     }
 }

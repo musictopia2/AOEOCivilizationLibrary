@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class RomanUnits
 {
     public const string House = "Ro_Bldg_House";
@@ -79,6 +79,54 @@ public static class RomanUnits
             Decurion,
             PrimusPilus,
             Centurion
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            House,
+            Fortress,
+            TownCenter,
+            Castellum,
+            AuxiliaCamp,
+            Praetorium,
+            SiegeWorkshop,
+            Armory,
+            Farm,
+            Storehouse,
+            Forum,
+            Market,
+            Templum,
+            GuardTower,
+            Dock,
+            WatchPost,
+            Wonder,
+            Villager,
+            Engineer,
+            Clinicus,
+            Caravan,
+            FishingBoat,
+            MerchantTransport,
+            Liburnian,
+            Enneris,
+            Spearman,
+            Legionary,
+            Eques,
+            BalearicSlinger,
+            CretanBowman,
+            GallicHorseman,
+            Aquilifer,
+            Centurion,
+            Decurion,
+            PrimusPilus,
+            BatteringRam,
+            Scorpio,
+            Onager,
+            Palintonon,
+            Pontifex,
+            Scout,
+            Millarium
         ];
     }
 }

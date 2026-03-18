@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class GreekUnits
 {
     public const string Farm = "Gr_Bldg_Farm";
@@ -64,6 +64,50 @@ public static class GreekUnits
             Wonder,
             Storehouse,
             SiegeWorkshop
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Farm,
+            Gate,
+            TownCenter,
+            Villager,
+            Spearman,
+            Hoplite,
+            Hypaspist,
+            Toxotes,
+            Hippikon,
+            Peltast,
+            Prodromos,
+            Ballista,
+            BatteringRam,
+            Barracks,
+            Academy,
+            ArcheryRange,
+            Dock,
+            Market,
+            SiegeWorkshop,
+            Storehouse,
+            Temple,
+            WatchPost,
+            GuardTower,
+            Armory,
+            Stables,
+            Caravan,
+            FishingBoat,
+            MerchantTransport,
+            Priest,
+            Trireme,
+            BallistaTrireme,
+            Fortress,
+            Palintonon,
+            Scout,
+            Wonder,
+            Sarissophoroi,
+            Gastraphetes,
+            FireShip
         ];
     }
 }

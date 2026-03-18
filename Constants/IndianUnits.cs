@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class IndianUnits
 {
     public const string Farm = "In_Bldg_Farm";
@@ -35,4 +35,43 @@ public static class IndianUnits
     public const string SacredCow = "In_SacredCow";
     public const string ClubMonkey = "In_Inf_Monkey1";
     public const string FireMonkey = "In_Arc_Monkey2";
+
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Farm,
+            Storehouse,
+            Monastery,
+            Market,
+            Shrine,
+            GuardTower,
+            Dock,
+            WatchPost,
+            Wonder,
+            Villager,
+            GathererElephant,
+            Guru,
+            Caravan,
+            FishingBoat,
+            MerchantTransport,
+            Vimana,
+            Fireship,
+            Spearman,
+            GadaWarrior,
+            Bowman,
+            Ranger,
+            Turanga,
+            BladeChariot,
+            WarElephant,
+            ElephantArcher,
+            Juggernaut,
+            Ram,
+            Palintonon,
+            Scout,
+            SacredCow,
+            ClubMonkey,
+            FireMonkey
+        ];
+    }
 }

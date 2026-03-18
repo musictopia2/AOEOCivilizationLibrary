@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class NorseUnits
 {
     public const string Villager = "No_Civ_Villager";
@@ -63,6 +63,50 @@ public static class NorseUnits
             Stables,
             Wonder,
             Storehouse,
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Villager,
+            FishingBoat,
+            Caravan,
+            MerchantTransport,
+            Scout1,
+            Scout2,
+            Skirmisher,
+            Harjar,
+            Berzerker,
+            Ulfhednar,
+            Chief,
+            Bowman,
+            Raider,
+            Horseman,
+            Farbjor,
+            LogThrower,
+            Rhapsode,
+            Longship,
+            Fireship,
+            Seer,
+            ThrowingAxeman,
+            WarDog,
+            TownCenter,
+            Outpost,
+            Market,
+            GuardTower,
+            Spearman,
+            Raven,
+            Farm,
+            Barracks,
+            Armory,
+            ArcheryRange,
+            Stables,
+            GreatHall,
+            Fortress,
+            Wonder,
+            Storehouse,
+            Longhouse,
         ];
     }
 }

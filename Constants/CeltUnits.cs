@@ -1,4 +1,4 @@
-﻿namespace AOEOCivilizationLibrary.Constants;
+namespace AOEOCivilizationLibrary.Constants;
 public static class CeltUnits
 {
     public const string Spearman = "Ce_Inf_Spearman";
@@ -61,6 +61,43 @@ public static class CeltUnits
             Stables,
             Wonder,
             GoldMine
+        ];
+    }
+    public static BasicList<string> GetAllExceptWalls()
+    {
+        return
+        [
+            Spearman,
+            LongSwordsman,
+            WoadRaider,
+            Champion,
+            Slinger,
+            Bowman,
+            Scout,
+            Horseman,
+            Swanship,
+            Druid,
+            Augur,
+            Villager,
+            FishingBoat,
+            MerchantTransport,
+            Caravan,
+            TownCenter,
+            WatchPost,
+            House,
+            Farm,
+            Market,
+            GuardTower,
+            Armory,
+            ArcheryRange,
+            Stables,
+            SacredGrove,
+            Fortress,
+            Ram,
+            Wonder,
+            GoldMine,
+            Carpentom,
+            StoneThrower
         ];
     }
 }
