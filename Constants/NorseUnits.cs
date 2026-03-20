@@ -96,7 +96,6 @@ public static class NorseUnits
             Market,
             GuardTower,
             Spearman,
-            Raven,
             Farm,
             Barracks,
             Armory,

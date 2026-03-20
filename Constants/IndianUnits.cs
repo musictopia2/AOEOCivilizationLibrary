@@ -69,7 +69,6 @@ public static class IndianUnits
             Ram,
             Palintonon,
             Scout,
-            SacredCow,
             ClubMonkey,
             FireMonkey
         ];

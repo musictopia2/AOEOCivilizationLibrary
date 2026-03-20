@@ -8,3 +8,4 @@ global using BasicBlazorLibrary.Components.AutoCompleteHelpers;
 global using BasicBlazorLibrary.Components.ComboTextboxes;
 global using Microsoft.AspNetCore.Components;
 global using AOEOCivilizationLibrary.ApplicationState;
+global using AOEOCivilizationLibrary.Constants;

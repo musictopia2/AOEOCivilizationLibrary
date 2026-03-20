@@ -71,7 +71,6 @@ public static class GreekUnits
         return
         [
             Farm,
-            Gate,
             TownCenter,
             Villager,
             Spearman,

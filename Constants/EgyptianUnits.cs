@@ -106,8 +106,7 @@ public static class EgyptianUnits
             FireShip,
             SiegeTower,
             Catapult,
-            Palintonon,
-            Gate
+            Palintonon
         ];
     }
 }
