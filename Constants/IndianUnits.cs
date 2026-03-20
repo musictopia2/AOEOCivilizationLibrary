@@ -2,6 +2,7 @@ namespace AOEOCivilizationLibrary.Constants;
 public static class IndianUnits
 {
     public const string Farm = "In_Bldg_Farm";
+    public const string House = "In_Bldg_House";
     public const string Storehouse = "In_Bldg_StoreHouse";
     public const string Monastery = "In_Bldg_Monastery";
     public const string Market = "In_Bldg_Market";
@@ -41,6 +42,7 @@ public static class IndianUnits
         return
         [
             Farm,
+            House,
             Storehouse,
             Monastery,
             Market,
