@@ -50,6 +50,7 @@ public static class IndianUnits
             GuardTower,
             Dock,
             WatchPost,
+            House,
             Wonder,
             Villager,
             GathererElephant,

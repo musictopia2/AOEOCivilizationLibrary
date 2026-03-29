@@ -97,6 +97,7 @@ public static class PersianUnits
             Fortress,
             GuardTower,
             WatchPost,
+            House,
             Market,
             SiegeWorkshop,
             Stables,

@@ -92,6 +92,7 @@ public static class EgyptianUnits
             TownCenter,
             Wonder,
             Storehouse,
+            House,
             Scout,
             CamelRider,
             WarElephant,
@@ -106,7 +107,8 @@ public static class EgyptianUnits
             FireShip,
             SiegeTower,
             Catapult,
-            Palintonon
+            Palintonon,
+            WatchPost
         ];
     }
 }

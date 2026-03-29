@@ -83,6 +83,7 @@ public static class BabylonUnits
             TownCenter,
             WatchPost,
             GuardTower,
+            House,
             Fortress,
             Slinger,
             ChariotArcher,
