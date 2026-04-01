@@ -79,7 +79,6 @@ public static class NorseUnits
     }
     public static string GetExcludedAgeUpTech(int maxAge)
     {
-        BasicList<string> output = [];
         foreach (var p in _permissions)
         {
             if (p.Category == EnumPermissionCategory.AgeUpTech && p.PreviousAge!.Value == maxAge)
