@@ -130,7 +130,6 @@ public static class NorseUnits
     }
 
 
-    //public static BasicList<string> ExcludedTechs()
 
     public const string Villager = "No_Civ_Villager";
     public const string FishingBoat = "No_Civ_FishingBoat";
