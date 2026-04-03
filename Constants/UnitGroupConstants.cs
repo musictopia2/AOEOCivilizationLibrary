@@ -31,4 +31,9 @@ internal static class UnitGroupConstants
     public const string BatteringRam = "UnitTypeSiegeRam1";
     public const string WatchPost = "UnitTypeBldgWatchPost";
     public const string Armory = "UnitTypeBldgArmory";
+    public const string Stables = "UnitTypeBldgStables";
+    public const string ArcheryRange = "UnitTypeBldgArcheryRange";
+    public const string Academy = "UnitTypeBldgAcademy";
+    public const string Temple = "Temple";
+    public const string SiegeWorkshop = "UnitTypeBldgSiegeWorkshop";
 }

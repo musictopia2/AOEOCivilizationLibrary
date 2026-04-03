@@ -16,12 +16,12 @@ public static class NorseUnits
             new PermissionsModel(){ TechName="No_Ct_UnitUlfhednar1", MainGroup=UnitGroupConstants.Infantry, Category=EnumPermissionCategory.Unit },
 
             // Archery Range
-            new PermissionsModel(){ TechName="No_Ct_BldgArcheryRange1", Category=EnumPermissionCategory.Building },
+            new PermissionsModel(){ TechName="No_Ct_BldgArcheryRange1", MainGroup = UnitGroupConstants.ArcheryRange, Category=EnumPermissionCategory.Building },
             new PermissionsModel(){ TechName="No_Ct_UnitSkirmisher1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
             new PermissionsModel(){ TechName="No_Ct_UnitBowman1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
 
             // Stables
-            new PermissionsModel(){ TechName="No_Ct_BldgStables1",  Category=EnumPermissionCategory.Building },
+            new PermissionsModel(){ TechName="No_Ct_BldgStables1", MainGroup = UnitGroupConstants.Stables,  Category=EnumPermissionCategory.Building },
             new PermissionsModel(){ TechName="No_Ct_UnitRaider1", MainGroup=UnitGroupConstants.Cavalry, Category=EnumPermissionCategory.Unit },
             new PermissionsModel(){ TechName="No_Ct_UnitHorseman1", MainGroup=UnitGroupConstants.Cavalry, Category=EnumPermissionCategory.Unit },
 
@@ -57,7 +57,7 @@ public static class NorseUnits
             new PermissionsModel(){ TechName="No_Ct_BldgHouse1", MainGroup=UnitGroupConstants.House, Category=EnumPermissionCategory.Building },
 
             // Great Hall
-            new PermissionsModel(){ TechName="No_Ct_BldgGreatHall1", Category=EnumPermissionCategory.Building },
+            new PermissionsModel(){ TechName="No_Ct_BldgGreatHall1", MainGroup = UnitGroupConstants.Temple, Category=EnumPermissionCategory.Building },
             new PermissionsModel(){ TechName="No_Ct_UnitSeer1", MainGroup=UnitGroupConstants.Priest,
                 MainRole=OptionalUnitGroupConstants.ConvertingPriest, Category=EnumPermissionCategory.Unit },
             new PermissionsModel(){ TechName="No_Ct_UnitChief1", Category=EnumPermissionCategory.Unit },
@@ -69,8 +69,8 @@ public static class NorseUnits
             new PermissionsModel(){ TechName="No_Ct_UnitWarDog1", Exception=true, Category=EnumPermissionCategory.Unit },
             new PermissionsModel(){ TechName="No_Ct_UnitScout1", MainGroup=UnitGroupConstants.Scout, Category=EnumPermissionCategory.Unit },
             new PermissionsModel(){ TechName="No_Ct_UnitScout2", MainGroup=UnitGroupConstants.Scout, Category=EnumPermissionCategory.Unit },
-            new PermissionsModel(){ TechName="No_Ct_BldgGuardTower1", MainRole=UnitGroupConstants.GuardTower, Category=EnumPermissionCategory.Building },
-            new PermissionsModel(){ TechName="No_Ct_BldgWall1", MainRole=UnitGroupConstants.Wall, Category=EnumPermissionCategory.Building },
+            new PermissionsModel(){ TechName="No_Ct_BldgGuardTower1", MainGroup=UnitGroupConstants.GuardTower, Category=EnumPermissionCategory.Building },
+            new PermissionsModel(){ TechName="No_Ct_BldgWall1", MainGroup=UnitGroupConstants.Wall, Category=EnumPermissionCategory.Building },
 
             // Age caps
             new PermissionsModel(){ TechName="NorseCapAge3", PreviousAge=2, Category=EnumPermissionCategory.AgeUpTech },

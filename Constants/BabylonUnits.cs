@@ -1,6 +1,107 @@
 namespace AOEOCivilizationLibrary.Constants;
 public static class BabylonUnits
 {
+    private static BasicList<PermissionsModel> _permissions = [];
+    static BabylonUnits()
+    {
+        _permissions =
+        [
+            new PermissionsModel(){ TechName="Ba_Ct_BldgBarracks1", MainGroup=UnitGroupConstants.Barracks, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitSpearman1", MainGroup=UnitGroupConstants.Infantry, MainRole=UnitGroupConstants.Spearman, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitShieldBearer1", MainGroup=UnitGroupConstants.Infantry, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitSapper1", MainGroup=UnitGroupConstants.Infantry, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitRoyalGuard1", MainGroup=UnitGroupConstants.Infantry, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgArcheryRange1", MainGroup=UnitGroupConstants.ArcheryRange, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitSlinger1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitBowman1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgStables1", MainGroup=UnitGroupConstants.Stables, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitLancer1", MainGroup=UnitGroupConstants.Cavalry, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitChariotArcher1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitMountedArcher1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitWarChariot1", MainGroup=UnitGroupConstants.Archer, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgSiegeWorkshop1", MainGroup=UnitGroupConstants.SiegeWorkshop, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitSiegeTower1", MainGroup=UnitGroupConstants.Siege, MainRole=UnitGroupConstants.BatteringRam, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgTownCenter1", MainGroup=UnitGroupConstants.TownCenter, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitVillager1", MainGroup=UnitGroupConstants.Villager, Exception=true, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitOxCart1", MainGroup=UnitGroupConstants.Unit, Exception=true, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgFarm1", MainGroup=UnitGroupConstants.Farm, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgGarden1", MainGroup=UnitGroupConstants.Building, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgDock1", MainGroup=UnitGroupConstants.Dock, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitFishingBoat1", MainGroup=UnitGroupConstants.FishingBoat, Exception=true, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitBireme1", MainGroup=UnitGroupConstants.Ship, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitMerchantTransport1", MainGroup=UnitGroupConstants.MerchantTransport, Exception=true, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitRamship1", MainGroup=UnitGroupConstants.Ship, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgHouse1", MainGroup=UnitGroupConstants.House, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgMarket1", MainGroup=UnitGroupConstants.Market, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitCaravan1", MainGroup=UnitGroupConstants.Caravan, Exception=true, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgWonder1", MainGroup=UnitGroupConstants.Wonder, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgArmory1", MainGroup=UnitGroupConstants.Armory, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgZiggurat1", MainGroup=UnitGroupConstants.Temple, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitPriest1", MainGroup=UnitGroupConstants.Priest, MainRole=OptionalUnitGroupConstants.ConvertingPriest, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgFortress1", MainGroup=UnitGroupConstants.Fortress, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitPalintonin1", MainGroup=UnitGroupConstants.Siege, MainRole=UnitGroupConstants.Palintonon, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgWatchPost1", MainGroup=UnitGroupConstants.WatchPost, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_UnitScout1", MainGroup=UnitGroupConstants.Scout, Category=EnumPermissionCategory.Unit },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgGuardTower1", MainGroup=UnitGroupConstants.GuardTower, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="Ba_Ct_BldgWall1", MainGroup=UnitGroupConstants.Wall, Category=EnumPermissionCategory.Building },
+        new PermissionsModel(){ TechName="BabylonCapAge3", PreviousAge=2, Category=EnumPermissionCategory.AgeUpTech },
+        new PermissionsModel(){ TechName="BabylonCapAge4", PreviousAge=3, Category=EnumPermissionCategory.AgeUpTech }
+        ];
+    }
+
+    public static string GetExcludedAgeUpTech(int maxAge)
+    {
+        foreach (var p in _permissions)
+        {
+            if (p.Category == EnumPermissionCategory.AgeUpTech && p.PreviousAge!.Value == maxAge)
+            {
+                return p.TechName;
+            }
+        }
+        throw new CustomBasicException($"No age up tech found for age {maxAge}");
+    }
+
+    public static string GetExcludedBuildingTech(string buildingName)
+    {
+        foreach (var p in _permissions)
+        {
+            if (p.Category == EnumPermissionCategory.Building && (p.MainGroup == buildingName || p.MainRole == buildingName))
+            {
+                return p.TechName;
+            }
+        }
+        throw new CustomBasicException($"No building tech found for {buildingName}");
+    }
+    public static BasicList<string> GetExcludedFromBlockedUnits(BasicList<string> blockUnits)
+    {
+        BasicList<string> output = [];
+        foreach (var p in _permissions)
+        {
+            if (p.Category == EnumPermissionCategory.Unit && blockUnits.Contains(p.MainGroup))
+            {
+                output.Add(p.TechName);
+            }
+            if (p.Category == EnumPermissionCategory.Unit && blockUnits.Contains(p.MainRole))
+            {
+                output.Add(p.TechName);
+            }
+        }
+        return output;
+    }
+    public static BasicList<string> GetExcludedFromAllowedUnits(BasicList<string> allowUnits)
+    {
+        BasicList<string> output = [];
+        foreach (var p in _permissions)
+        {
+            if (p.Category == EnumPermissionCategory.Unit && allowUnits.Contains(p.MainGroup) == false && allowUnits.Contains(p.MainRole) == false && p.Exception == false)
+            {
+                output.Add(p.TechName);
+            }
+        }
+        return output;
+    }
+
+
     public const string Villager = "Ba_Civ_Villager";
     public const string FishingBoat = "Ba_Civ_FishingBoat";
     public const string Caravan = "Ba_Civ_Caravan";
