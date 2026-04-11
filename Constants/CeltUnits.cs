@@ -1,6 +1,5 @@
-using System.Security;
-
 namespace AOEOCivilizationLibrary.Constants;
+
 public static class CeltUnits
 {
     public const string Spearman = "Ce_Inf_Spearman";

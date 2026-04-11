@@ -1,9 +1,17 @@
-using System.Security;
-
 namespace AOEOCivilizationLibrary.Constants;
+
 public static class IndianUnits
 {
     public const string Farm = "In_Bldg_Farm";
+    //added
+    public const string TownCenter = "In_Bldg_TownCenter";
+    public const string Barracks = "In_Bldg_Barracks";
+    public const string ArcheryRange = "In_Bldg_ArcheryRange";
+    public const string Armory = "In_Bldg_Armory";
+    public const string Stables = "In_Bldg_Stables";
+    public const string MahoutCamp = "In_Bldg_MahoutCamp";
+    public const string Fortress = "In_Bldg_Fortress";
+    //end added
     public const string House = "In_Bldg_House";
     public const string Storehouse = "In_Bldg_StoreHouse";
     public const string Monastery = "In_Bldg_Monastery";
@@ -147,6 +155,13 @@ public static class IndianUnits
         [
             Farm,
             House,
+            TownCenter,
+            Barracks,
+            ArcheryRange,
+            Armory,
+            Stables,
+            MahoutCamp,
+            Fortress,
             Storehouse,
             Monastery,
             Market,
@@ -154,7 +169,6 @@ public static class IndianUnits
             GuardTower,
             Dock,
             WatchPost,
-            House,
             Wonder,
             Villager,
             GathererElephant,
