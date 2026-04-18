@@ -201,7 +201,8 @@ public static class BabylonUnits
             Stables,
             Wonder,
             Garden,
-            SiegeWorkshop
+            SiegeWorkshop,
+            SiegeTower
         ];
     }
 }
