@@ -202,7 +202,10 @@ public static class BabylonUnits
             Wonder,
             Garden,
             SiegeWorkshop,
-            SiegeTower
+            SiegeTower,
+            Barracks,
+            Dock,
+            Ziggurat
         ];
     }
 }

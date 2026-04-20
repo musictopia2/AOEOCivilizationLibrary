@@ -205,7 +205,8 @@ public static class PersianUnits
             Storehouse,
             TownCenter,
             Wonder,
-            ImmortalCamp
+            ImmortalCamp,
+            Farm
         ];
     }
 }

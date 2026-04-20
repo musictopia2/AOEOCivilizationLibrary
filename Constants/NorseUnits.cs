@@ -236,6 +236,7 @@ public static class NorseUnits
             Wonder,
             Storehouse,
             Longhouse,
+            Dock
         ];
     }
 }

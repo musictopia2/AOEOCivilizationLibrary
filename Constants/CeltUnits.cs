@@ -199,7 +199,11 @@ public static class CeltUnits
             Wonder,
             GoldMine,
             Carpentom,
-            StoneThrower
+            StoneThrower,
+            Barracks,
+            BardHall,
+            StoreHouse,
+            Dock
         ];
     }
 }

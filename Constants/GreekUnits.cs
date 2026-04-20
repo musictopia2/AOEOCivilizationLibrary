@@ -209,7 +209,8 @@ public static class GreekUnits
             Wonder,
             Sarissophoroi,
             Gastraphetes,
-            FireShip
+            FireShip,
+            House
         ];
     }
 }
